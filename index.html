@@ -3,166 +3,38 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Quasi-rien</title>
-
-    <style>
-
-        * {
-            box-sizing: border-box;
-        }
-
-        html, body {
-            margin: 0;
-            padding: 0;
-        }
-
-        body {
-            background: #e8e4dc;
-            color: #171717;
-            font-family: Georgia, "Times New Roman", serif;
-        }
-
-        .menu {
-            position: fixed;
-            left: 0;
-            top: 0;
-
-            width: 220px;
-            height: 100vh;
-
-            padding: 30px 25px;
-
-            border-right: 1px solid #171717;
-
-            background: #e8e4dc;
-        }
-
-        .nom {
-            font-size: 25px;
-            margin-bottom: 70px;
-        }
-
-        .menu a {
-            display: block;
-
-            margin-bottom: 18px;
-
-            color: #171717;
-            text-decoration: none;
-
-            font-size: 16px;
-        }
-
-        .menu a:hover {
-            text-decoration: underline;
-        }
-
-        main {
-            margin-left: 220px;
-            padding: 70px 90px;
-            max-width: 1200px;
-        }
-
-        h1 {
-            font-size: 64px;
-            font-weight: normal;
-            margin: 0 0 35px 0;
-        }
-
-        .introduction {
-            max-width: 650px;
-            font-size: 21px;
-            line-height: 1.5;
-        }
-
-        .entrees {
-            margin-top: 100px;
-        }
-
-        .entrees h2 {
-            font-size: 18px;
-            font-weight: normal;
-            margin-bottom: 30px;
-        }
-
-        .entree {
-            display: inline-block;
-
-            margin-right: 45px;
-            margin-bottom: 25px;
-
-            font-size: 27px;
-        }
-
-        .entree a {
-            color: #171717;
-            text-decoration: none;
-        }
-
-        .entree a:hover {
-            text-decoration: underline;
-        }
-
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <nav class="menu">
+    <aside class="sidebar">
 
-        <div class="nom">
+        <div class="site-title">
             Quasi-rien
         </div>
 
-        <a href="index.html">Accueil</a>
-        <a href="ecrits/">Écrits</a>
-        <a href="#">Cabinet</a>
-        <a href="#">Dossiers</a>
-        <a href="#">Archives</a>
-        <a href="#">Dérive</a>
+        <nav class="menu">
+            <a href="index.html">Accueil</a>
+            <a href="ecrits/">Écrits</a>
+            <a href="#">Cabinet</a>
+            <a href="#">Dossiers</a>
+            <a href="#">Archives</a>
+            <a href="#">Dérive</a>
+        </nav>
 
-    </nav>
+    </aside>
 
 
     <main>
 
         <h1>Quasi-rien</h1>
 
-        <div class="introduction">
-
+        <div class="page-intro">
             Un lieu pour les textes, les œuvres, les idées,
             les images, les sons et quelques autres choses.
-
         </div>
-
-
-        <section class="entrees">
-
-            <h2>Quelques entrées</h2>
-
-            <div class="entree">
-                <a href="litterature/">Littérature</a>
-            </div>
-
-            <div class="entree">
-                <a href="#">Arts</a>
-            </div>
-
-            <div class="entree">
-                <a href="#">Musique</a>
-            </div>
-
-            <div class="entree">
-                <a href="#">Théorie</a>
-            </div>
-
-            <div class="entree">
-                <a href="#">Cinéma</a>
-            </div>
-
-        </section>
 
     </main>
 
