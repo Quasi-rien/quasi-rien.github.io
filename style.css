@@ -8,9 +8,9 @@ html {
 
 body {
     margin: 0;
-    background: #F8F7F2;
+    background: #FAF9F5;
     color: #181411;
-    font-family: "Univers", Arial, sans-serif;
+    font-family: "IBM Plex Sans", Arial, sans-serif;
 }
 
 a {
@@ -33,7 +33,7 @@ main a:hover {
     height: 100vh;
     padding: 35px 25px;
     background: #181411;
-    color: #F8F7F2;
+    color: #FAF9F5;
     border-right: 1px solid #181411;
 }
 .site-title {
