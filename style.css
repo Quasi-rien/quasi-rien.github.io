@@ -118,9 +118,22 @@ h2 {
 }
 
 .site-heading {
-    font-family: Didot, "Bodoni MT", "Times New Roman", serif;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-family: "IBM Plex Sans", Arial, sans-serif;
     font-size: 46px;
     font-weight: normal;
     letter-spacing: -1px;
     margin: 0 0 45px 0;
+}
+
+.site-heading img {
+    width: 82px;
+    height: auto;
+    display: block;
+}
+
+.site-heading span {
+    display: block;
 }
