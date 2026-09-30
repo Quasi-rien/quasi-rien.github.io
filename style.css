@@ -137,3 +137,11 @@ h2 {
 .site-heading span {
     display: block;
 }
+.home-cerebellum {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    width: 520px;
+    height: auto;
+    display: block;
+}
