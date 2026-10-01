@@ -38,9 +38,10 @@ h1 { margin:0 0 20px; font-size:clamp(34px,4vw,48px); letter-spacing:-.035em; }
 .intro { max-width: 680px; font-size: inherit; line-height: inherit; text-align: justify; }
 /* Texte et image de présentation */
 .intro-layout {
-  --img-w: 360px;   
-  --gap: 80px;      /* écart entre le texte et l'image */
-  --edge: 0px;      /* écart entre l'image et le bord droit du conteneur */
+  --img-w: 360px;
+  --gap: 80px;
+  --edge: 0px;
+  --shift: 60px;   /* décalage vers la droite, à ajuster */
 
   display: grid;
   grid-template-columns: minmax(0, 1fr) var(--img-w);
@@ -49,16 +50,11 @@ h1 { margin:0 0 20px; font-size:clamp(34px,4vw,48px); letter-spacing:-.035em; }
   align-items: end;
 }
 
-.intro {
-  max-width: 680px;
-  align-self: start;
-  text-align: justify;
-}
-
 .intro-image {
-  width: 100%;      /* remplit la colonne de --img-w */
-  height: auto;     /* conserve le ratio 660x772 */
+  width: 100%;
+  height: auto;
   display: block;
+  transform: translateX(var(--shift));
 }
 
 @media (max-width: 900px) {
