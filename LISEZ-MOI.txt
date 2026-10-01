@@ -1,0 +1,8 @@
+QUASI-RIEN — première maquette
+
+Ouvrir index.html dans un navigateur pour essayer le site.
+Pour publier : déposer le contenu de ce dossier dans le dépôt GitHub Pages.
+Les couleurs et la largeur de la barre se règlent au début de style.css.
+Le fond actuel est #F5F4EF, un blanc papier légèrement patiné.
+Les textes d’exemple sont à remplacer dans les fichiers HTML.
+La police est provisoirement Georgia/Times ; on pourra l’ajuster après vérification du Terrier.
