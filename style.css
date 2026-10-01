@@ -91,3 +91,5 @@ h1 { margin:0 0 20px; font-size:clamp(34px,4vw,48px); letter-spacing:-.035em; }
   .intro-layout { flex-direction: column; gap: 20px; }
 .intro-image { width: 150px; }
 }
+.intro-layout { outline: 4px solid red !important; }
+.intro-image { outline: 4px solid blue !important; }
