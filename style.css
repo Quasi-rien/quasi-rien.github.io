@@ -38,20 +38,24 @@ h1 { margin:0 0 20px; font-size:clamp(34px,4vw,48px); letter-spacing:-.035em; }
 .intro { max-width: 680px; font-size: inherit; line-height: inherit; text-align: justify; }
 /* Texte et image de présentation */
 .intro-layout {
+  --img-w: 480px;   /* largeur de l'image */
+  --gap: 80px;      /* écart voulu entre le texte et l'image */
+
   position: relative;
-  padding-right: 430px;
-  min-height: 500px;
+  padding-right: calc(var(--img-w) + var(--gap));
+  min-height: 570px; /* voir plus bas */
 }
 
 .intro {
-  max-width: 680px;
+  width: 680px;      /* largeur fixe du texte, et non plus un simple plafond */
+  max-width: 100%;
 }
 
 .intro-image {
   position: absolute;
   right: 0;
   bottom: 0;
-  width: 600px;
+  width: var(--img-w);
   height: auto;
   display: block;
 }
