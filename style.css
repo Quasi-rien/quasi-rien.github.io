@@ -34,7 +34,7 @@ a:hover, a:focus-visible { text-decoration:underline; }
 .home-header { max-width:760px; margin-bottom:48px; }
 .eyebrow { margin:0 0 12px; color:var(--muted); font:11px Arial,sans-serif; letter-spacing:.14em; text-transform:uppercase; }
 h1,h2 { font-weight:normal; line-height:1.2; }
-h1 { margin:0 0 20px; font-size:clamp(34px,4vw,48px); letter-spacing:-.035em; }
+h1 { margin:0 0 20px; font-size:clamp(26px, 3vw, 36px); letter-spacing:-.035em; font-family: "Garamond", Georgia, serif; font-style: italic; }
 .intro { max-width: 680px; font-size: inherit; line-height: inherit; text-align: justify; }
 .intro-layout {
   --img-w: 360px;   /* largeur de l'image */
