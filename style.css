@@ -31,40 +31,38 @@ a:hover, a:focus-visible { text-decoration:underline; }
 .nav-list a:hover { color:white; }
 .home-link { margin-top:auto; padding-top:15px; border-top:1px solid #4A4A48; color:var(--sidebar-text); font-size:13px; }
 .main { width:min(calc(100% - var(--sidebar-width)),1160px); margin-left:var(--sidebar-width); padding:54px clamp(30px,6vw,88px) 28px; }
-.home-header { max-width:760px; margin-bottom:48px; }
+.home-header { max-width:none; margin-bottom:48px; }
 .eyebrow { margin:0 0 12px; color:var(--muted); font:11px Arial,sans-serif; letter-spacing:.14em; text-transform:uppercase; }
 h1,h2 { line-height:1.2; }
 h2 { font-weight:normal; }
 h1 { margin:0 0 20px; font-size:clamp(26px, 3vw, 36px); letter-spacing:-.035em; font-family: "Garamond", Georgia, serif; font-style: italic; }
-.intro { max-width: 680px; font-size: inherit; line-height: inherit; text-align: justify; }
 .intro-layout {
+  --text-w: 330px;  /* largeur de la colonne de texte */
+  --gap: 160px;     /* écart entre le texte et l'image */
   --img-w: 360px;   /* largeur de l'image */
-  --gap: 80px;      /* écart texte / image */
-  --shift: 80px;    /* glissement de l'image vers la droite */
 
   display: grid;
-  grid-template-columns: minmax(0, 1fr) var(--img-w);
+  grid-template-columns: minmax(0, var(--text-w)) var(--img-w);
   column-gap: var(--gap);
+  justify-content: start;
   align-items: end;
-  outline: 4px solid red;
 }
 
 .intro-layout .intro {
-  max-width: 680px;
+  max-width: none;
+  margin: 0;
   text-align: justify;
 }
 
 .intro-layout .intro-image {
-  width: var(--img-w);
+  width: 100%;
   height: auto;
   display: block;
-  transform: translateX(var(--shift));
-  outline: 4px solid blue;
 }
 
-@media (max-width: 900px) {
-  .intro-layout { grid-template-columns: 1fr; }
-  .intro-image { max-width: var(--img-w); margin-top: 2rem; }
+@media (max-width: 1200px) {
+  .intro-layout { grid-template-columns: 1fr; row-gap: 2rem; }
+  .intro-layout .intro-image { width: min(100%, var(--img-w)); }
 }
 .content-grid { display:grid; grid-template-columns:minmax(0,1.1fr) minmax(220px,.9fr); gap:clamp(32px,6vw,76px); margin-bottom:75px; }
 .column h2 { margin: 0 0 12px; padding-bottom: 7px; border-bottom: 1px solid var(--rule); font-size: 16px; }
@@ -89,6 +87,4 @@ h1 { margin:0 0 20px; font-size:clamp(26px, 3vw, 36px); letter-spacing:-.035em; 
  .main { width:100%; margin:0; padding:35px 22px 22px; }
  .home-header { margin-bottom:34px; }
  .content-grid { grid-template-columns:1fr; gap:34px; margin-bottom:50px; }
-  .intro-layout { flex-direction: column; gap: 20px; }
-.intro-image { width: 150px; }
-}
+
