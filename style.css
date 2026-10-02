@@ -37,12 +37,12 @@ h1,h2 { line-height:1.2; }
 h2 { font-weight:normal; }
 h1 { margin:0 0 20px; font-size:clamp(26px, 3vw, 36px); letter-spacing:-.035em; font-family: "Garamond", Georgia, serif; font-style: italic; }
 .intro-layout {
-  --text-w: 420px;  /* largeur de la colonne de texte */
-  --img-w: 360px;   /* largeur de l'image */
+  --text-w: 560px;  /* largeur de la colonne de texte (était 420) */
+  --img-w: 440px;   /* largeur de l'image (était 360) */
 
   display: grid;
   grid-template-columns: minmax(0, var(--text-w)) minmax(0, 1fr);
-  column-gap: 40px; /* écart minimal garanti entre texte et image */
+  column-gap: 40px;
   align-items: end;
 }
 
