@@ -42,7 +42,7 @@ h1 { margin:0 0 20px; font-size:clamp(26px, 3vw, 36px); letter-spacing:-.035em; 
 
   display: grid;
   grid-template-columns: minmax(0, var(--text-w)) minmax(0, 1fr);
-  column-gap: 40px;
+  column-gap: 100px;
   align-items: end;
 }
 
