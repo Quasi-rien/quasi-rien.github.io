@@ -30,7 +30,12 @@ a:hover, a:focus-visible { text-decoration:underline; }
 .nav-list a { color:var(--sidebar-text); }
 .nav-list a:hover { color:white; }
 .home-link { margin-top:auto; padding-top:15px; border-top:1px solid #4A4A48; color:var(--sidebar-text); font-size:13px; }
-.main { width:min(calc(100% - var(--sidebar-width)),1160px); margin-left:var(--sidebar-width); padding:54px clamp(30px,6vw,88px) 28px; }
+.main {
+  background-image: url("assets/image accueil.png");
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+}
 .home-header { max-width:none; margin-bottom:48px; }
 .eyebrow { margin:0 0 12px; color:var(--muted); font:11px Arial,sans-serif; letter-spacing:.14em; text-transform:uppercase; }
 h1,h2 { line-height:1.2; }
