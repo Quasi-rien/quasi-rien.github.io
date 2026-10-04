@@ -31,7 +31,14 @@ a:hover, a:focus-visible { text-decoration:underline; }
 .nav-list a:hover { color:white; }
 .home-link { margin-top:auto; padding-top:15px; border-top:1px solid #4A4A48; color:var(--sidebar-text); font-size:13px; }
 .main {
-  background: url("assets/image accueil.png") center top / cover no-repeat;
+  margin-left: var(--sidebar-width);
+  min-height: 100vh;
+  padding: 54px clamp(35px, 6vw, 90px) 40px;
+
+  background-image: url("assets/image accueil.png");
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
 }
 .home-header { max-width:none; margin-bottom:48px; }
 .eyebrow { margin:0 0 12px; color:var(--muted); font:11px Arial,sans-serif; letter-spacing:.14em; text-transform:uppercase; }
